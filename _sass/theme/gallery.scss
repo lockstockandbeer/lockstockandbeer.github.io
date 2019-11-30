@@ -1,0 +1,17 @@
+#gallery {
+    background-image: url("/assets/images/Gallery.png");
+}
+
+.contact-arrow-right {
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .contact-arrow-right{
+        right: 1.5rem;
+        transform: translateY(0%);
+    }
+}

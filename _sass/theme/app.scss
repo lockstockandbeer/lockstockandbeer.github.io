@@ -1,0 +1,103 @@
+// import font
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+// set variables
+$col-bg: black;
+$col-sun: white;
+$page-change-font: Kankin-Regular;
+
+*{
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+body{
+	background-color: $col-bg;
+    #barba-wrapper{
+        height: 100vh;
+        width: 100vw;
+	}
+	
+	.barba-container {
+		height: 100vh;
+		width: 100vw;
+	}
+}
+
+// background images
+.background-image{
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+// button to navigate between pages
+.button{
+	a {
+		color: $col-sun;
+		font-family: $page-change-font;
+	}
+	text-decoration: none;
+	padding: 10px 30px;
+	z-index: 1;
+}
+
+// bottom button
+.bottom{
+	position: fixed;
+  	left: 50%;
+  	bottom: 1rem;
+ 	transform: translateX(-50%);
+	margin: 0 auto;
+	border-bottom: 2px solid $col-sun; 
+	padding-bottom: 5px;
+}
+
+// top button
+.top{
+	position: fixed;
+  	left: 50%;
+  	top: 1rem;
+ 	transform: translateX(-50%);
+	margin: 0 auto;
+	border-top: 2px solid $col-sun; 
+	padding-top: 5px;
+}
+
+// right button
+.right{
+	position: fixed;
+	right: 1rem;
+	top: 50%;
+    transform: translateY(-50%);
+ 	margin: 0 auto;
+	border-right: 2px solid $col-sun; 
+	padding-right: 5px;
+}
+
+// left button
+.left{
+	position: fixed;
+  	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	border-left: 2px solid $col-sun; 
+	padding-left: 5px;
+}
+
+// fonts
+.stellar-bold{
+	font-family: Stellar-Bold;
+}
+
+.stellar-medium{
+	font-family: Stellar-Medium;
+}
+
+.kankin-regular{
+	font-family: Kankin-Regular;
+}

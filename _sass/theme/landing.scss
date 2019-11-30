@@ -1,0 +1,72 @@
+#index {
+  background-image: url("/assets/images/landingWide.png");
+}
+
+#copy {
+  left: 50%;
+  transform: translateX(-25%);
+
+  h4 {
+    bottom: 5rem;
+    left: 35%;
+  }
+}
+.inshadow {
+  -webkit-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
+  box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+}
+
+.logo {
+  top: 3rem;
+  left: 1rem;
+  width: 20%;
+}
+
+@media (max-width: 575.98px) {
+  .logo {
+    width: 30%;
+  }
+
+  .small-contain {
+    text-align: center;
+    padding: 1rem 0 0 0 !important;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .no-bottom {
+    padding-bottom: 0 !important;
+  }
+
+  #index {
+    background-image: url("/assets/images/landingNarrow.png");
+  }
+
+  #copy {
+    left: 50%;
+    transform: translateX(-50%);
+
+    div {
+      text-align: center !important;
+    }
+
+    h4 {
+      left: 0;
+    }
+  }
+}

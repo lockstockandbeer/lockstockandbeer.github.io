@@ -1,0 +1,115 @@
+#menu {
+    background-image: url("/assets/images/Menu.png");
+
+    .container {
+        max-width: 850px !important;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+      
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+
+    .btn:hover{
+        background-color: rgba(82, 77, 77, 0.75);
+        border-color: rgba(82, 77, 77, 0.75);
+    }
+
+    .btn:focus{
+        box-shadow: 0 0 0 0.2rem rgba(82, 77, 77, 0.75);
+    }
+}
+.blue{
+    color: rgb(36, 89, 187);
+}
+
+.red{
+    color: rgb(189, 39, 39);
+}
+
+.contact-arrow-left {
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .contact-arrow-left{
+        top: 1.5rem;
+        transform: translateY(0%);
+    }
+}
+
+.team-grid {
+    color: #fff;
+}
+  
+.team-grid p {
+    color: #7d8285;
+}
+  
+.team-grid h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+}
+  
+@media (max-width:767px) {
+    .team-grid h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+}
+  
+.team-grid .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+.team-grid .intro p {
+    margin-bottom: 0;
+}
+  
+.team-grid .people {
+    padding: 50px 0;
+}
+  
+.team-grid .item {
+    margin-bottom: 30px;
+}
+  
+.team-grid .item .box {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    position: relative;
+}
+  
+.team-grid .item .name {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+.team-grid .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bbd8fb;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px){
+    #menu .team-grid .item {
+        width: 75%;
+    }
+}

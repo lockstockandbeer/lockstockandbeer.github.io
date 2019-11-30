@@ -1,0 +1,79 @@
+---
+title: LSB Home
+layout: default
+---
+
+<video id="video" class="video-fluid z-depth-1"  preload autoplay muted></video>
+
+<!-- content -->
+<div id="delay">
+    <div class="inshadow h-100 w-100 position-fixed"></div>
+  <!-- nav buttons -->
+  <div class="button top"><a href="/pages/about.html">About Us</a></div>
+  <div class="button left"><a href="/pages/gallery.html">Gallery</a></div>
+  <div class="button right"><a href="/pages/menu.html">Menu</a></div>
+  <div class="button bottom"><a href="/pages/contact.html">Contact Us</a></div>
+
+  <!-- logo -->
+  <div class="logo position-absolute">
+    <img class="img-fluid" src="assets/images/logo.png" />
+  </div>
+  <div class="container d-flex flex-column vh-100">
+    <div class="row justify-content-end my-auto">
+      <div class="small-contain col-6 pl-5">
+        <h1 class="mx-auto my-auto text-uppercase text-light pb-4 stellar-bold">
+          Beer Garden | Gourmet Kitchen
+        </h1>
+        <h3 class="text-light mx-auto pb-3 stellar-medium"><span class="blue">Daringly</span> Different.</h3>
+            <h3 class="text-light mx-auto pb-3 stellar-medium"><span class="blue">Bravely</span> Bizarre.</h3>
+            <h3 class="no-bottom text-light mx-auto pb-3 stellar-medium"><span class="blue">Curiously</span> Chaotic.</h3>
+            <h4 class="text-light mx-auto text-center stellar-medium">LSB is where <span class="red">moments of mischief</span> are made...</h4>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- script to sort out what video plays and to delay html content appearance -->
+<script>
+  var w = document.documentElement.clientWidth;
+
+  var video = document.getElementById("video");
+  var source1 = document.createElement("source");
+  var source2 = document.createElement("source");
+
+  if (w > 575.98) {
+    source1.setAttribute("src", "/assets/videos/wideIntro.mp4");
+    source2.setAttribute("src", "/assets/videos/wideIntro.webm");
+    video.classList.add("h-100");
+  } else {
+    source1.setAttribute("src", "/assets/videos/narrowIntro.mp4");
+    source2.setAttribute("src", "/assets/videos/narrowIntro.webm");
+    video.classList.add("w-100");
+  }
+
+  source1.setAttribute("type", "video/mp4");
+  source2.setAttribute("type", "video/webm");
+
+  video.appendChild(source1);
+  video.appendChild(source2);
+
+  video.load();
+
+  var content = document.getElementById("delay");
+  content.style.display = "none";
+
+  // wait to see if video is loaded
+  var b = setInterval(() => {
+    if (video.readyState >= 3) {
+      //This block of code is triggered when the video is loaded
+      setTimeout(function() {
+        $("#delay").fadeIn(400);
+        // $('#video').fadeOut(400);
+      }, 5000);
+      //stop checking every half second
+      clearInterval(b);
+    }
+  }, 500);
+</script>

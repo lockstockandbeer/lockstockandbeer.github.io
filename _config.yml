@@ -1,0 +1,29 @@
+title: Lock, Stock and Beer
+
+description: >-
+  Lock Stock and Beer is a rustic pub-beergarden cross in Pineslopes
+baseurl: ""
+url: "..."
+contact:
+  email: mail@lsb.com 
+  address: lsb address
+  phone: (011) 123 456
+social:
+  facebook: ...
+  instagram: ...
+  twitter: ...
+
+# Build settings
+github: [metadata]
+markdown: kramdown
+sass:
+    style: compressed
+plugins:
+  - jekyll-sitemap
+  - jekyll-autoprefixer
+exclude:
+  - README.md
+  - dev
+  - .idea
+  - BootstrapStudio
+  - .vscode

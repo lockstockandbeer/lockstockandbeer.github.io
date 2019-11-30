@@ -1,0 +1,116 @@
+---
+layout: default
+numDrinks: 14
+numFood: 6 
+---
+
+<!-- buttons -->
+<!-- <div class="button top"><a href="/pages/about.html">About Us</a></div>
+<div class="col-md-auto button left"><a href="/index.html">Home</a></div>
+<div class="button bottom"><a href="/pages/contact.html">Contact Us</a></div> -->
+
+<div class="inshadow h-100 w-100 position-fixed"></div>
+<div class="team-grid align-middle d-block">
+    <div class="container">
+        <a href="/index.html"><i class="fas fa-arrow-left text-white fa-2x contact-arrow-left position-fixed"></i></a>
+        <div class="intro">
+            <h2 class="text-center stellar-bold">Menu</h2>
+            <p class="text-center stellar-medium">Expect a totally unexpected drinking and dining experience...</p>
+        </div>
+        <div class="row people justify-content-center">
+            <div class="col-md-5 item">
+                <button type="button" class="btn" data-toggle="modal" data-target="#foodMenu">
+                    <div class="box h-100">
+                            <img class="img-fluid mb-3" src="/assets/images/food/1.png">
+                            <h3 class="name stellar-bold text-white"><span class="red">Food</span> Menu</h3>
+                            <p class="title stellar-medium">Stuff yo' face with our chow...</p>
+                    </div>
+                </button>
+            </div>
+            <div class="col-md-5 item">
+                <button type="button" class="btn" data-toggle="modal" data-target="#drinksMenu">
+                    <div class="box h-100">
+                            <img class="img-fluid mb-3" src="/assets/images/drinks/1.png">
+                            <h3 class="name stellar-bold text-white"><span class="blue">Drinks</span> Menu</h3>
+                            <p class="title stellar-medium">Stir up some good times...</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#drinksMenu">View Menu</button> -->
+
+<!-- Modal drinks -->
+<div class="modal fade" id="drinksMenu" tabindex="-1" role="dialog" aria-labelledby="drinksMenuCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-transparent">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-white mx-auto" id="drinksMenuLongTitle">Drinks Menu</h5>
+            </div>
+            <div class="modal-body">
+                <div id="carouselDrinksIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        {% for i in (1..page.numDrinks) %}
+                            <li data-target="#carouselDrinksIndicators" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        {% for i in (1..page.numDrinks) %}
+                            <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                                <img class="img-fluid mx-auto d-block w-100" src="/assets/images/drinks/{{ i }}.png">
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselDrinksIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselDrinksIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal food -->
+<div class="modal fade" id="foodMenu" tabindex="-1" role="dialog" aria-labelledby="foodMenuCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-transparent">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white mx-auto" id="foodMenuLongTitle">Food Menu</h5>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselFoodIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                            {% for i in (1..page.numFood) %}
+                                <li data-target="#carouselFoodIndicators" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %} class="active" {% endif %}></li>
+                            {% endfor %}
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            {% for i in (1..page.numFood) %}
+                                <div class="carousel-item {% if forloop.first %} active {% endif %}">
+                                    <img class="img-fluid mx-auto d-block w-100" src="/assets/images/food/{{ i }}.png">
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselFoodIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselFoodIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

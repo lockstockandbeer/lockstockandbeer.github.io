@@ -1,0 +1,14 @@
+//Add other scss files to this one which is in turn imported alongside the bootstrap in assets/css/main.scss
+//This file simply collects other scss files before being imported into the main
+//Eg.
+//@import menu.scss <--- the actual scss style that is also in this directory
+//@import home.scss
+//@import map.scss
+
+@import "app.scss";
+@import "contact.scss";
+@import "menu.scss";
+@import "about.scss";
+@import "gallery.scss";
+@import "landing.scss";
+@import "barba.scss";
