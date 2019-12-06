@@ -31,7 +31,6 @@ window.addEventListener("load", () => {
         that.newContainer.classList.remove(slideType);
         that.done();
       });
-      startTimer();
     }
   });
   var slide_right = Barba.BaseTransition.extend({
@@ -64,7 +63,10 @@ window.addEventListener("load", () => {
         that.newContainer.classList.remove(slideType);
         that.done();
       });
-      startTimer();
+      var next = Barba.HistoryManager.currentStatus()
+      .url.split("/")
+      .pop();
+      if (next == "gallery.html") galleryStart();
     }
   });
   var slide_up = Barba.BaseTransition.extend({
@@ -97,7 +99,6 @@ window.addEventListener("load", () => {
         that.newContainer.classList.remove(slideType);
         that.done();
       });
-      startTimer();
     }
   });
   var slide_down = Barba.BaseTransition.extend({
@@ -130,7 +131,6 @@ window.addEventListener("load", () => {
         that.newContainer.classList.remove(slideType);
         that.done();
       });
-      startTimer();
     }
   });
   /**

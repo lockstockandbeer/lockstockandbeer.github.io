@@ -11,6 +11,7 @@
     left: 35%;
   }
 }
+
 .inshadow {
   -webkit-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
@@ -19,7 +20,7 @@
   min-height: 100%;
 }
 
-video {
+#video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -34,9 +35,25 @@ video {
   width: 20%;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
+  #index {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-image: url("/assets/images/landingWide.png");
+  }
+
   .logo {
-    width: 30%;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 40%;
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   .small-contain {
@@ -48,7 +65,9 @@ video {
     margin-right: auto;
     margin-left: auto;
   }
+}
 
+@media (max-width: 575.98px) {
   .no-bottom {
     padding-bottom: 0 !important;
   }
@@ -57,16 +76,16 @@ video {
     background-image: url("/assets/images/landingNarrow.png");
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   #copy {
     left: 50%;
     transform: translateX(-50%);
 
     div {
       text-align: center !important;
-    }
-
-    h4 {
-      left: 0;
     }
   }
 }

@@ -28,8 +28,21 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 			<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-			<script src="/assets/js/barba.js"></script>
+            
+            <script type="text/javascript">
+                /* curator-feed-default-layout */
+                (function(){
+                    galleryStart();
+                })();
+            
+                function galleryStart(){
+                    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+                    i.src = "https://cdn.curator.io/published/bd01b920-94db-41f2-a5f7-75158ec15ce6.js";
+                    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+                };
+            </script>
 
+            <script src="/assets/js/barba.js"></script>
         </div>
 
     </div>
