@@ -3,6 +3,7 @@
 <head>
     <title>{{ site.title }}</title>
     <!-- Required meta tags -->
+    <meta name="description" content="{{ site.description }}" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -18,7 +19,7 @@
     <div id="barba-wrapper">
       	<div class="barba-container position-absolute">
 			<!-- This section will have an id of menu, contact, gallery, index, about -->
-			<section id="{{ page.name | remove: ".html"}}" class="background-image"> 
+			<section id="{{ page.name | remove: ".html"}}" class="background-image position-absolute"> 
 				{{ content }}
 			</section>
 

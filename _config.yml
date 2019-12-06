@@ -1,7 +1,7 @@
-title: Lock, Stock and Beer
+title: "Lock, Stock and Beer: Beer Garden | Gourmet Kitchen"
 
 description: >-
-  Lock Stock and Beer is a rustic pub-beergarden cross in Pineslopes
+  Lock Stock and Beer is a rustic pub-beergarden cross based in Pineslopes serving exotic drinks and gourmet food to the occasional background of live music
 baseurl: ""
 url: "..."
 contact:
@@ -9,9 +9,9 @@ contact:
   address: lsb address
   phone: (011) 123 456
 social:
-  facebook: ...
-  instagram: ...
-  twitter: ...
+  facebook: https://www.facebook.com/LockStockBeer/
+  instagram: https://www.instagram.com/lsb_sa/?hl=en
+  twitter: https://twitter.com/lsb_sa
 
 # Build settings
 github: [metadata]

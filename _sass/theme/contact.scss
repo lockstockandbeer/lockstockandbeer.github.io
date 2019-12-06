@@ -7,3 +7,27 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.social {
+  margin-bottom: 0;
+  a {
+      color: rgba(256, 256, 256, 0.8);   
+      display: inline-block;
+      text-align: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      padding-top: 3px;
+      font-size: 16px;
+      border: 2px solid rgba(256, 256, 256, 0.8);   
+      &:hover{
+          color: #fff;
+          border-color: #fff;
+          cursor: pointer;
+      }
+  }
+}
+
+.on-top {
+  z-index: 100000;
+}

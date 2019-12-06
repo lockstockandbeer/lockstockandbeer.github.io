@@ -21,7 +21,7 @@ numFood: 6
             <div class="col-md-5 item">
                 <button type="button" class="btn" data-toggle="modal" data-target="#foodMenu">
                     <div class="box h-100">
-                            <img class="img-fluid mb-3" src="/assets/images/food/1.png">
+                            <img class="img-fluid mb-3" src="/assets/images/food/1.png" alt="food menu cover page">
                             <h3 class="name stellar-bold text-white"><span class="red">Food</span> Menu</h3>
                             <p class="title stellar-medium">Stuff yo' face with our chow...</p>
                     </div>
@@ -30,7 +30,7 @@ numFood: 6
             <div class="col-md-5 item">
                 <button type="button" class="btn" data-toggle="modal" data-target="#drinksMenu">
                     <div class="box h-100">
-                            <img class="img-fluid mb-3" src="/assets/images/drinks/1.png">
+                            <img class="img-fluid mb-3" src="/assets/images/drinks/1.png" alt="drinks menu cover page">
                             <h3 class="name stellar-bold text-white"><span class="blue">Drinks</span> Menu</h3>
                             <p class="title stellar-medium">Stir up some good times...</p>
                     </div>
@@ -61,7 +61,7 @@ numFood: 6
                     <div class="carousel-inner" role="listbox">
                         {% for i in (1..page.numDrinks) %}
                             <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                <img class="img-fluid mx-auto d-block w-100" src="/assets/images/drinks/{{ i }}.png">
+                                <img class="img-fluid mx-auto d-block w-100" src="/assets/images/drinks/{{ i }}.png" alt="drinks menu page {{ i }}">
                             </div>
                         {% endfor %}
                     </div>
@@ -96,7 +96,7 @@ numFood: 6
                         <div class="carousel-inner" role="listbox">
                             {% for i in (1..page.numFood) %}
                                 <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                                    <img class="img-fluid mx-auto d-block w-100" src="/assets/images/food/{{ i }}.png">
+                                    <img class="img-fluid mx-auto d-block w-100" src="/assets/images/food/{{ i }}.png" alt="food menu page {{ i }}">
                                 </div>
                             {% endfor %}
                         </div>
