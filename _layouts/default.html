@@ -23,7 +23,26 @@
 				{{ content }}
 			</section>
 
-			<!--TODO: Add JSON-LD-->
+            <!-- JSON-LD -->
+            <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org/",
+                  "@type": "Restaurant",
+                  "name": "Lock, Stock and Beer",
+                  "acceptsReservations": "Yes",
+                  "menu": "https://lockstockandbeer.github.io/pages/menu.html",
+                  "servesCuisine": "Bar & Grill",
+                  "priceRange": "$$",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Shop 34, Pineslopes Boulevard",
+                    "addressLocality": "Sandton",
+                    "addressRegion": "Gauteng",
+                    "postalCode": "2191"
+                  },
+                  "telephone": "010 200 9942"
+                }
+                </script>
 
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 			<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
