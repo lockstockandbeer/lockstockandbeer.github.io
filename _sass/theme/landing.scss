@@ -42,14 +42,11 @@
   }
 
   .logo {
-    position: relative;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 40%;
     width: 45%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   h1 {
