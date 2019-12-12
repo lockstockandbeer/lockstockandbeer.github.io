@@ -7,7 +7,8 @@ $col-sun: white;
 $page-change-font: Kankin-Regular;
 
 *{
-    box-sizing: border-box;
+	box-sizing: border-box;
+	touch-action: manipulation;
 }
 
 body{
