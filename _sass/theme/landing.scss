@@ -1,5 +1,9 @@
 #index {
-  background-image: url("/assets/images/landingWide.png");
+  background-image: url("/assets/images/landingWide.jpg");
+}
+
+* {
+  touch-action: pan-y;
 }
 
 #copy {
@@ -13,9 +17,9 @@
 }
 
 .inshadow {
-  -webkit-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
-  -moz-box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
-  box-shadow: inset 0px 0px 50px 70px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: inset 0px 0px 70px 100px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: inset 0px 0px 70px 100px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0px 0px 70px 100px rgba(0, 0, 0, 0.9);
   min-width: 100%;
   min-height: 100%;
 }
@@ -37,8 +41,9 @@
 
 @media (max-width: 767.98px) {
   #index {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    background-image: url("/assets/images/landingWide.png");
+    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/assets/images/landingWide.jpg");
   }
 
   .logo {
@@ -70,7 +75,8 @@
   }
 
   #index {
-    background-image: url("/assets/images/landingNarrow.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/assets/images/landingNarrow.jpg");
   }
 
   h1 {

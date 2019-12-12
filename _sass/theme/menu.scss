@@ -1,5 +1,5 @@
 #menu {
-    background-image: url("/assets/images/menu.png");
+    background-image: url("/assets/images/menu.jpg");
 
     .container {
         max-width: 850px !important;
@@ -24,6 +24,10 @@
 }
 .blue{
     color: rgb(67, 130, 212);
+}
+
+.carousel-item{
+    touch-action: pinch-zoom;
 }
 
 .red{
