@@ -27,3 +27,4 @@ exclude:
   - .idea
   - BootstrapStudio
   - .vscode
+  - quotes
