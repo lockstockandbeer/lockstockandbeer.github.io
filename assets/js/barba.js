@@ -165,7 +165,6 @@ window.addEventListener("load", () => {
       else if (next == "about.html") return slide_down;
     } else if (prev == "menu.html") {
       fixModalStuff();
-      scroll_to_top();
       if (next == "index.html") return slide_right;
       else if (next == "contact.html") return slide_up;
       else if (next == "about.html") return slide_down;
