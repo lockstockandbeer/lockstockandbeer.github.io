@@ -2,8 +2,8 @@
   background-image: url("/assets/images/landingWide.jpg");
 }
 
-* {
-  touch-action: pan-y;
+body {
+  touch-action: pan-y pinch-zoom;
 }
 
 #copy {

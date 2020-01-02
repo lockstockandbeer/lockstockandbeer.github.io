@@ -64,8 +64,8 @@ window.addEventListener("load", () => {
         that.done();
       });
       var next = Barba.HistoryManager.currentStatus()
-      .url.split("/")
-      .pop();
+        .url.split("/")
+        .pop();
       if (next == "gallery.html") galleryStart();
     }
   });
@@ -164,6 +164,8 @@ window.addEventListener("load", () => {
       else if (next == "contact.html") return slide_up;
       else if (next == "about.html") return slide_down;
     } else if (prev == "menu.html") {
+      fixModalStuff();
+      scroll_to_top();
       if (next == "index.html") return slide_right;
       else if (next == "contact.html") return slide_up;
       else if (next == "about.html") return slide_down;
