@@ -21,8 +21,8 @@ function galleryStart() {
 }
 
 function fixModalStuff() {
-  $('#foodMenu').remove();
-  $('#drinksMenu').remove();
-  $('.modal-backdrop').remove();
-  $('body').removeClass('modal-open');
+  $("#foodMenu").modal("hide");
+  $("#drinksMenu").modal("hide");
+  $("body").removeClass("modal-open");
+  $(".modal-backdrop").remove();
 }
