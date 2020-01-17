@@ -27,6 +27,6 @@ function fixModalStuff() {
   $(".modal-backdrop").remove();
 }
 
-window.onload = function() {
+document.onload = function() {
   $(".barba-container").css("visibility", "visible");
 };
