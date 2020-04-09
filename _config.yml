@@ -3,7 +3,7 @@ title: "Lock, Stock and Beer: Beer Garden | Gourmet Kitchen"
 description: >-
   Lock Stock and Beer is a rustic pub-beergarden cross based in Pineslopes serving exotic drinks and gourmet food to the occasional background of live music
 baseurl: ""
-url: "..."
+url: "https://www.lockstockandbeer.co.za"
 contact:
   email: admin@lockstockandbeer.co.za 
   address: Shop 34, Pineslopes Boulevard, Sandton, Gauteng
@@ -28,3 +28,4 @@ exclude:
   - BootstrapStudio
   - .vscode
   - quotes
+  - vendor
