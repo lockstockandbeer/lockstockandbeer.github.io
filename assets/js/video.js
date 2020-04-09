@@ -37,6 +37,7 @@ var b = setInterval(() => {
     }, 3600);
     setTimeout(function() {
       $('#video').fadeOut(500);
+      $("#covidNotice").modal('show');
     }, 3500);
     
     //stop checking every half second

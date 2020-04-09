@@ -7,7 +7,7 @@ layout: default
 
 <!-- content -->
 <div id="delay">
-    <div class="inshadow h-100 w-100 position-fixed"></div>
+  <div class="inshadow h-100 w-100 position-fixed"></div>
   <!-- nav buttons -->
   <div class="button top"><a href="/pages/about.html">About Us</a></div>
   <div class="button left"><a href="/pages/gallery.html">Gallery</a></div>
@@ -23,14 +23,42 @@ layout: default
           Beer Garden <br> Gourmet Kitchen
         </h1>
         <h3 class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Daringly <span class="blue">Different</span>.</h3>
-            <h3 class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Bravely <span class="blue">Bizarre</span>.</h3>
-            <h3 class="font-weight-bolder no-bottom text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Curiously <span class="blue">Chaotic</span>.</h3>
-            <h4 class="text-light mx-auto stellar-medium d-none d-md-block text-uppercase">LSB is where <span class="red">moments of mischief</span> are made...</h4>
-        </div>
+        <h3 class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Bravely <span class="blue">Bizarre</span>.</h3>
+        <h3 class="font-weight-bolder no-bottom text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Curiously <span class="blue">Chaotic</span>.</h3>
+        <h4 class="text-light mx-auto stellar-medium d-none d-md-block text-uppercase">LSB is where <span class="red">moments of mischief</span> are made...</h4>
        
       </div>
     </div>
   </div>
+
+  <!-- COVID-19 NOTICE -->
+  <!-- $("#covidNotice").modal('show'); is also in video.js -->
+  <!-- also look in landing.scss at the bottom -->
+  <div
+  class="modal fade"
+  id="covidNotice"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="covidNoticeCenterTitle"
+  aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white text-bold mx-auto" id="covidNoticeLongTitle">
+            COVID-19 NOTICE
+          </h5>
+        </div>
+        <div class="modal-body">
+          <p class="text-white text-justify">
+            Please visit the official South African Government COVID-19 Resource Portal for information relating to South Africa's Response to COVID-19: <a href="https://sacoronavirus.co.za/" target="_blank">https://sacoronavirus.co.za/</a>
+          </p>
+        </div>
+        <button id="covidNoticeClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- hide social profiles for seo -->
