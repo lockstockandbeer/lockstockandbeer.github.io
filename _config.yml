@@ -5,7 +5,7 @@ description: >-
 baseurl: ""
 url: "https://www.lockstockandbeer.co.za"
 contact:
-  email: admin@lockstockandbeer.co.za 
+  email:
   address: Shop 34, Pineslopes Boulevard, Sandton, Gauteng
   phone: (010) 200 9942
 social:
@@ -17,7 +17,7 @@ social:
 github: [metadata]
 markdown: kramdown
 sass:
-    style: compressed
+  style: compressed
 plugins:
   - jekyll-sitemap
   - jekyll-autoprefixer
