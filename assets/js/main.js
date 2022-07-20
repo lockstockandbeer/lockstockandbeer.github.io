@@ -3,7 +3,7 @@ function scroll_to_top() {
 }
 
 /* curator-feed-default-layout */
-(function() {
+(function () {
   galleryStart();
 })();
 
@@ -14,8 +14,9 @@ function galleryStart() {
     s = "script";
   i = d.createElement("script");
   i.async = 1;
+  i.charset = "UTF-8";
   i.src =
-    "https://cdn.curator.io/published/bd01b920-94db-41f2-a5f7-75158ec15ce6.js";
+    "https://cdn.curator.io/published/bb728121-1504-47b3-9000-f068f2ee32dc.js";
   e = d.getElementsByTagName(s)[0];
   e.parentNode.insertBefore(i, e);
 }
@@ -27,6 +28,6 @@ function fixModalStuff() {
   $(".modal-backdrop").remove();
 }
 
-document.onload = function() {
+document.onload = function () {
   $(".barba-container").css("visibility", "visible");
 };
