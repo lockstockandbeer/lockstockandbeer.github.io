@@ -3,7 +3,7 @@ title: LSB Home
 layout: default
 ---
 
-<video id="video" class="z-depth-1"  preload autoplay muted playsinline></video> 
+<video id="video" class="z-depth-1" preload autoplay muted playsinline></video>
 
 <!-- content -->
 <div id="delay">
@@ -15,18 +15,40 @@ layout: default
   <div class="button bottom"><a href="/pages/contact.html">Contact Us</a></div>
 
   <!-- logo -->
-  <img class="img-fluid logo position-absolute" src="/assets/images/logo.png" alt="logo"/>
+  <img
+    class="img-fluid logo position-absolute"
+    src="/assets/images/logo.png"
+    alt="logo"
+  />
   <div class="container d-flex flex-column vh-100">
     <div class="row justify-content-end my-auto">
       <div class="small-contain col-6 pl-5">
-        <h1 class="mx-auto my-auto text-light pb-4 stellar-bold text-nowrap d-none d-md-block">
-          Beer Garden <br> Gourmet Kitchen
+        <h1
+          class="mx-auto my-auto text-light pb-4 stellar-bold text-nowrap d-none d-md-block"
+        >
+          Beer Garden <br />
+          Gourmet Kitchen
         </h1>
-        <h3 class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Daringly <span class="blue">Different</span>.</h3>
-        <h3 class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Bravely <span class="blue">Bizarre</span>.</h3>
-        <h3 class="font-weight-bolder no-bottom text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase">Curiously <span class="blue">Chaotic</span>.</h3>
-        <h4 class="text-light mx-auto stellar-medium d-none d-md-block text-uppercase">LSB is where <span class="red">moments of mischief</span> are made...</h4>
-       
+        <h3
+          class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase"
+        >
+          Daringly <span class="blue">Different</span>.
+        </h3>
+        <h3
+          class="font-weight-bolder text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase"
+        >
+          Bravely <span class="blue">Bizarre</span>.
+        </h3>
+        <h3
+          class="font-weight-bolder no-bottom text-light mx-auto pb-3 stellar-medium d-none d-md-block text-uppercase"
+        >
+          Curiously <span class="blue">Chaotic</span>.
+        </h3>
+        <h4
+          class="text-light mx-auto stellar-medium d-none d-md-block text-uppercase"
+        >
+          LSB is where <span class="red">moments of mischief</span> are made...
+        </h4>
       </div>
     </div>
   </div>
@@ -34,7 +56,7 @@ layout: default
   <!-- COVID-19 NOTICE -->
   <!-- $("#covidNotice").modal('show'); is also in video.js -->
   <!-- also look in landing.scss at the bottom -->
-  <div
+  <!-- <div
   class="modal fade"
   id="covidNotice"
   tabindex="-1"
@@ -57,15 +79,22 @@ layout: default
         <button id="covidNoticeClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </div>
-
+  </div> -->
 </div>
 
 <!-- hide social profiles for seo -->
 <ul class="social list-inline d-none">
-  <li class="list-inline-item mx-2"><a href="{{ site.social.facebook }}"><i class="fab fa-facebook-f centered"></i></a></li>
-  <li class="list-inline-item mx-2"><a href="{{ site.social.instagram }}"><i class="fab fa-instagram"></i></a></li>
-  <li class="list-inline-item mx-2"><a href="{{ site.social.twitter }}"><i class="fab fa-twitter"></i></a></li>
+  <li class="list-inline-item mx-2">
+    <a href="{{ site.social.facebook }}"
+      ><i class="fab fa-facebook-f centered"></i
+    ></a>
+  </li>
+  <li class="list-inline-item mx-2">
+    <a href="{{ site.social.instagram }}"><i class="fab fa-instagram"></i></a>
+  </li>
+  <li class="list-inline-item mx-2">
+    <a href="{{ site.social.twitter }}"><i class="fab fa-twitter"></i></a>
+  </li>
 </ul>
 
 <!-- script to sort out what video plays and to delay html content appearance -->

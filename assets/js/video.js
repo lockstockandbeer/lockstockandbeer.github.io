@@ -23,23 +23,23 @@ video.load();
 var content = document.getElementById("delay");
 content.style.display = "none";
 
-function sync () {
-var video = document.querySelector('#video');
-video.classList.add('anim-fade-out');
+function sync() {
+  var video = document.querySelector("#video");
+  video.classList.add("anim-fade-out");
 }
 
 // wait to see if video is loaded
 var b = setInterval(() => {
   if (video.readyState >= 3) {
     //This block of code is triggered when the video is loaded
-    setTimeout(function() {
+    setTimeout(function () {
       $("#delay").fadeIn(500);
     }, 3600);
-    setTimeout(function() {
-      $('#video').fadeOut(500);
-      $("#covidNotice").modal('show');
+    setTimeout(function () {
+      $("#video").fadeOut(500);
+      // $("#covidNotice").modal('show');
     }, 3500);
-    
+
     //stop checking every half second
     clearInterval(b);
   }
