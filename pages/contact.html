@@ -7,9 +7,17 @@ layout: default
         <a href="/index.html"><i class="fas fa-arrow-up text-white fa-2x contact-arrow-up position-fixed"></i></a>
         <h1 class="mx-auto my-auto text-uppercase text-light pb-4 stellar-bold">Contact Us</h1>
         <h4 class="text-light mx-auto pb-3 stellar-medium">Go on, slide into our DMs…</h4>
-        <p class="text-light stellar-medium">Dial us up: {{ site.contact.phone }}</p>
-        <p class="text-light stellar-medium">Send us an email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-        <p class="text-light stellar-medium">Come for a visit: {{ site.contact.address }}</p>
+        <div class="row justify-content-md-center">
+            {% for store in site.contact %}
+            <div class="col-md-4">
+                <h4 class="text-light mx-auto pb-3 stellar-medium"> {{ store.name }}</h4>
+                <p class="text-light stellar-medium">Dial us up: {{ store.phone }}</p>
+                <p class="text-light stellar-medium">Send us an email: <a href="mailto:{{ site.contact.email }}">{{ store.email }}</a></p>
+                <p class="text-light stellar-medium">Come for a visit: {{ store.address }}</p>
+                <hr class="hr text-light stellar-medium border-top d-block d-sm-none" />
+            </div>
+            {% endfor %}
+        </div>
         <ul class="social list-inline">
             <li class="list-inline-item mx-2"><a href="{{ site.social.facebook }}"><i class="fab fa-facebook-f centered"></i></a></li>
             <li class="list-inline-item mx-2"><a href="{{ site.social.instagram }}"><i class="fab fa-instagram"></i></a></li>

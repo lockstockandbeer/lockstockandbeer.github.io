@@ -5,9 +5,14 @@ description: >-
 baseurl: ""
 url: "https://www.lockstockandbeer.co.za"
 contact:
-  email: reservations@lockstockandbeer.co.za
-  address: Shop 34, Pineslopes Boulevard, Sandton, Gauteng
-  phone: (010) 200 9942
+  - name: Pineslopes
+    email: reservations@lockstockandbeer.co.za
+    address: Shop 34, Pineslopes Boulevard, Sandton, Gauteng
+    phone: (010) 200 9942
+  - name: Weltevreden Park
+    email: reservations@lockstockandbeer.co.za
+    address: Palm Court Shopping Centre, CNR J.G. Strydom Rd & Cornelius St, Weltevrednpark, Roodepoort, Gauteng
+    phone: +27 69 806 4808
 social:
   facebook: https://www.facebook.com/LockStockBeer/
   instagram: https://www.instagram.com/lsb_sa/?hl=en
